@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <!-- Mở đầu -->
+    <head>
+        <!-- Tên của tab -->
+        <title> My website </title>
+        <link rel = "stylesheet" href = "portfolio.css">
+        <link rel = "stylesheet" href = "portfolio_responsive.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel = "stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel = "stylesheet" href = "./assets/fonts/fontawesome-free-5.12.0/css/all.min.css">
+        <script src = "project_animation.js" async></script>
+        <!-- Hỗ trợ tiếng việt -->
+        <meta charset = "utf-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <!-- Thân / content -->
+    <body>
+        <div class = "nav_bar-pc">
+            <div class = "navbar_pc-image">
+                <img src = "../portfolio_image/p10.png" style = "width: 80%; height: 60%; margin-top: 30px;">
+                <h2> PORTFOLIO </h2>
+                <h4 style = "font-family: Georgia, 'Times New Roman', Times, serif;"> Since 2022 </h4>
+            </div>
+            <div class = "navbar_pc-info">
+                <div class = "info">
+                    <i class = "fa fa-th-large fa-fw w3-margin-right"></i>
+                    <a href = "#portfolio"> <p> PORTFOLIO </p> </a>
+                </div>
+                <div class = "info">
+                    <i class = "fa fa-user fa-fw w3-margin-right"></i>
+                    <a href = "#about"> <p> ABOUT </p> </a>
+                </div>
+                <div class = "info">
+                    <i class = "fa fa-envelope fa-fw w3-margin-right"></i>
+                    <a href = "#contact"> <p> CONTACT </p> </a>
+                </div>
+            </div>
+        </div>
+        <div class = "nav_bar-mobile">
+            <div class = "menu_btn">
+                <label for = "nav-mobile-input" class="fa-solid fa-bars" style = "color: white; font-size: 32px; margin-left: 20px; margin-top: 15px;"></label>
+                <input type = "checkbox" hidden name = "" class = "nav_input" id = "nav-mobile-input">
+                <label for = "nav-mobile-input" class="nav_overlay"></label>
+                
+                <div class = "navbar_mobile-options">
+                    <label for = "nav-mobile-input" class = "navbar_mobile-close">
+                        <i class='fas fa-times-circle'></i>
+                    </label>
+                    <ul class = "navbar_mobile-list">
+                        <li>
+                            <a href = "" class = "navbar_mobile-link"> Home </a>
+                        </li>
+                        <li>
+                            <a href = "" class = "navbar_mobile-link"> About </a>
+                        </li>
+                        <li>
+                            <a href = "" class = "navbar_mobile-link"> News </a>
+                        </li>
+                        <li>
+                            <a href = "" class = "navbar_mobile-link"> Contact </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div class="search-box">
+                <input type="text" class="input-search" placeholder="Type to Search...">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+                
+            </div>
+        </div>
+        
+        
+        <div class = "content">
+            <div class = "portfolio_head" id = "portfolio">
+                <h1 style = "font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 50px;"> My portfolio </h1>
+            </div>
+            <div class = "portfolio_container" id = "portfolio">
+                <div class = "section 1">
+                    <div class = "post">
+                        <img src = "../portfolio_image/p4.jpg" class = "post_image">
+                        <div class = "post_para">
+                            <p> Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. 
+                                <button a href = "#" style = "background-color: black; color: white; cursor: pointer; border-radius: 8px;"> Show more </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "post">
+                        <img src = "../portfolio_image/p1.jpg" class = "post_image">
+                        <div class = "post_para">
+                            <p> Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. 
+                                <button a href = "#" style = "background-color: black; color: white; cursor: pointer; border-radius: 8px;"> Show more </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "post">
+                        <img src = "../portfolio_image/p2.jpg" class = "post_image" >
+                        <div class = "post_para">
+                            <p> Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. 
+                                <button a href = "#" style = "background-color: black; color: white; cursor: pointer; border-radius: 8px;"> Show more </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "section 2">
+                    <div class = "post">
+                        <img src = "../portfolio_image/p3.jpg" class = "post_image" >
+                        <div class = "post_para">
+                            <p> <strong>Reaching out Tea House</strong> , found since 1970. Located in 131 Tran Phu St, Hoi An, Viet Nam. The most special is all are served by the deaf. 
+                                <button onclick="window.location.href = 'reachingout.html';" style = "background-color: black; color: white; cursor: pointer; border-radius: 8px;"> Show more </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "post">
+                        <img src = "../portfolio_image/p5.jpg" class = "post_image" >
+                        <div class = "post_para">
+                            <p> <strong> Mot</strong>, a must-try drink in Hoi An. Its ingredients include cinnamon, lemongrass, lime, scent of lotus, honeysuckle and traditional herbs.
+                                <button onclick="window.location.href = 'mot_drink.html';" style = "background-color: black; color: white; cursor: pointer; border-radius: 8px;"> Show more </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "post">
+                        <img src = "../portfolio_image/p6.jpg" class = "post_image" >
+                        <div class = "post_para">
+                            <p> Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. 
+                                <button a href = "#" style = "background-color: black; color: white; cursor: pointer; border-radius: 8px;"> Show more </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "pages">
+                    
+                </div>
+            </div>
+            <div class = "about" id = "about">
+                <div class = "about_me">
+                    <div class = "image 1">
+                        <img src = "../portfolio_image/p7.jpg" class = "image_img">
+                    </div>
+                    <div class = "image 2">
+                        <img src = "../portfolio_image/p8.jpg" class = "image_img">
+                    </div>
+                </div>
+                <div class = "tech_skills">
+                    <div class = "tech_skills-head">
+                        <p> About me </p>
+                    </div>
+                    <div class = "tech_skills-body">
+                        <p> Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. <button a href = "#" style = "color: black;"> Show more </button> </p>
+                    </div>
+                </div>
+            </div>
+            <div class = "contact" id = "contact">
+                <div class = "contact_link">
+                    <div class = "contact_link-head">
+                        <p> Contact me </p>
+                    </div>
+                    <div class = "contact_link-body">
+                        <div class = "link 1" style = "background-color: lightskyblue;">
+                            <i class = "fa fa-envelope contact_link-icon"></i>
+                            <p style = "text-align: center;"> ong_t1@denison.edu </p>
+                        </div>
+                        <div class = "link 2" style = "background-color: darkolivegreen;">
+                            <i class = "fa fa-map-marker contact_link-icon"></i>
+                            <p style = "text-align: center;"> Da Nang, VN </p>
+                        </div>
+                        <div class = "link 3" style = "background-color: lightpink;">
+                            <i class = "fa fa-phone contact_link-icon"></i>
+                            <p style = "text-align: center;"> 740-405-9678 </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class = "contact_footer">
+                    <div class = "social_media">
+                        <div class = "social_media-link">
+                            <img class = "social_media_icons" src = "facebook.png">
+                            <h6 style = "font-family: Georgia, 'Times New Roman', Times, serif;">
+                                tran_portfolio
+                            </h6>
+                        </div>
+                        <div class = "social_media-link">
+                            <img class = "social_media_icons" src = "instagram.png">
+                            <h6 style = "font-family: Georgia, 'Times New Roman', Times, serif;">
+                                tran_portfolio
+                            </h6>
+                        </div>
+                        <div class = "social_media-link">
+                            <img class = "social_media_icons" src = "twitter.png">
+                            <h6 style = "font-family: Georgia, 'Times New Roman', Times, serif;">
+                                tran_portfolio
+                            </h6>
+                        </div>
+                    </div>
+                    <div class = "tag_me">
+                        <div class = "tag_me-heading">
+                            <h3 style = "font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;"> Popular tags </h3>
+                        </div>
+                        <div class = "tags">
+                            <div class = "contact_tag"> Travel</div>
+                            <div class = "contact_tag"> Paris</div>
+                            <div class = "contact_tag"> Lyon </div>
+                            <div class = "contact_tag"> Lisbon </div>
+                            <div class = "contact_tag"> Munich </div>
+                            <div class = "contact_tag"> Tokyo </div>
+                            <div class = "contact_tag"> Kyoto </div>
+                            <div class = "contact_tag"> Osaka </div>
+                            <div class = "contact_tag"></div>
+                            <div class = "contact_tag">  </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "copyrights" id = "copyrights">
+                    <p> Powered by @Tran_Ong </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

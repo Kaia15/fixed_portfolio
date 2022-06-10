@@ -1,0 +1,333 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 1301px) {
+    .nav_bar-mobile {
+        display: none;
+    }
+    .navbar_mobile-options {
+        display: none;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
+    .nav_bar-mobile {
+        display: none;
+    }
+    .navbar_mobile-options {
+        display: none;
+    }
+    .contact_link-body {
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+    }
+
+    .contact_footer {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social_media {
+        flex: 1;
+    }
+
+    .social_media_icons {
+        width: 30%;
+        height: 50%;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .tags {
+        margin-top: 30px;
+        flex: 0.8;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+    }
+    .nav_bar-pc {
+        display: none;
+    }
+    .nav_bar-mobile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+        background-color: black;
+    }
+
+    .menu_btn {
+        flex: 6;
+    }
+    .nav_overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.3);
+        display: none;
+        animation: fadeIn linear 0.2s;
+    }
+    .navbar_mobile-options {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        width: 280px;
+        background-color: black;
+        transform: translateX(-100%);
+        transition: transform linear 0.2s;
+    }
+    .navbar_mobile-list {
+        margin-top: 48px;
+        list-style-type: none;
+    }
+    .navbar_mobile-close {
+        font-size: 36px;
+        position: absolute;
+        right: 1rem;
+    }
+    .navbar_mobile-link {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 8px 16px;
+        font-size: 1.4rem;
+    }
+
+    .navbar_mobile-list li:hover {
+        background-color: lightblue;
+    }
+
+    .nav_input:checked ~ .nav_overlay {
+        display: block;
+    }
+    .nav_input:checked ~ .navbar_mobile-options {
+        transform: translateX(0%);
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .search-box {
+        flex: 4;
+    }
+
+    .input-search {
+        margin-top: 15px;
+        height: 50px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        border: none;
+        background-color: black;
+        color: #fff;
+    }
+
+    .btn-search {
+        margin-top: 15px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+        color: white;
+        background-color: black;
+        border-radius: 25px;
+        border: none;
+    }
+
+    .post_image {
+        width: 100%; height: 50%;
+    }
+}
+
+@media (max-width: 599px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 4000px;
+    }
+    .nav_bar-pc {
+        display: none;
+    }
+    .nav_bar-mobile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+        background-color: black;
+    }
+
+    .menu_btn {
+        flex: 1;
+    }
+
+    .nav_overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.3);
+        display: none;
+        animation: fadeIn linear 0.2s;
+    }
+    .navbar_mobile-options {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        width: 280px;
+        background-color: black;
+        transform: translateX(-100%);
+        transition: transform linear 0.2s;
+    }
+    .navbar_mobile-list {
+        margin-top: 32px;
+        list-style: none;
+    }
+    .navbar_mobile-close {
+        font-size: 36px;
+        position: absolute;
+        top: 0.1rem;
+        right: 1rem;
+    }
+    .navbar_mobile-link {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 8px 0px;
+        font-size: 1.4rem;
+    }
+
+    .navbar_mobile-list li:hover {
+        background-color: aliceblue;
+    }
+
+    .nav_input:checked ~ .nav_overlay {
+        display: block;
+    }
+    .nav_input:checked ~ .navbar_mobile-options {
+        transform: translateX(0%);
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .search-box {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .btn-search {
+        border-radius: 25px;
+        color: white;
+        background-color: black;
+        width: 45px;
+        height: 45px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+    }
+
+    .input-search {
+        margin-top: 15px;
+        height: 40px;
+        margin-bottom: 15px;
+        background-color: black;
+        color:#fff;
+        border: none;
+        transition: all .5s ease-in-out;
+    }
+    .portfolio_head {
+        flex: 2;
+    }    
+
+    .portforlio_container {
+        display: flex;
+        flex-direction: column;
+        flex: 13;
+    }
+
+    .section {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .post {
+        flex: 2;
+        margin-bottom: 16px;
+        padding: 0px 8px 0px 8px;
+    }
+
+    .post_image {
+        width: 100%; height: 70%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        flex: 7;
+    }
+    
+    .about_me {
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+    }
+    
+    .image {
+        flex: 1;
+    }
+
+    .contact_link {
+        flex: 4.5;
+    }
+
+    .contact_link-body {
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+    }
+
+    .contact_footer {
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social_media {
+        flex: 1;
+    }
+
+    .social_media_icons {
+        width: 30%;
+        height: 50%;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .tags {
+        margin-top: 0px;
+        flex: 1;
+    }
+}
