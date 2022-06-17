@@ -1,0 +1,141 @@
+* { margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+.nav_bar-mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0,0,0,0);
+    flex: 1;
+}
+
+.menu_btn {
+    flex: 6;
+}
+.nav_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.navbar_mobile-options {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    width: 280px;
+    background-color: rgba(0,0,0,0.02);
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+.navbar_mobile-list {
+    margin-top: 60px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar_mobile-close {
+    font-size: 36px;
+    position: absolute;
+    right: 1rem;
+}
+
+.navbar_mobile-link {
+    flex: 1;
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.navbar_mobile-link:hover {
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.nav_input:checked ~ .nav_overlay {
+    display: block;
+}
+.nav_input:checked ~ .navbar_mobile-options {
+    transform: translateX(0%);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.search-box {
+    flex: 4;
+}
+
+.input-search {
+    margin-top: 15px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(0,0,0,0.01);
+    color: #fff;
+}
+
+.btn-search {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgba(0,0,0,0.01);
+    border-radius: 25px;
+    border: none;
+}
+
+main {
+	margin: 0 auto;
+	padding: .875em .5em;
+	max-width: 32em;
+	background: whitesmoke;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+
+.banner {
+	margin-left: calc(50% - 50vw);
+	width: 100vw; height: 40vmax;
+	min-height: 15em;
+	background: linear-gradient(#000, transparent, #000), 
+		var(--img) 60%/ cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+	
+.banner:nth-of-type(1) {
+	--img: url(https://koreandramaland.com/wp-content/uploads/2016/10/decended-from-the-sun-filming-location-episode-12-Clock-Tower-of-Arachova-greece-1432x800.jpg);
+}
+
+.banner:nth-of-type(2) {
+    --img: url(https://image.thanhnien.vn/1200x630/Uploaded/2022/lxwpcqjwp/2016_05_01/me_before_you_bjbt.jpg);
+}
+
+.banner:nth-of-type(3) {
+    --img: url(https://media3.scdn.vn/img4/2021/08_03/8o7dmfe474NVCTTdOixS.jpg);
+}
+
+.banner:nth-of-type(4) {
+    --img: url(https://i.pinimg.com/originals/de/01/fb/de01fbe1db32f4bd838557382923f05c.jpg);
+}
+
+.banner:nth-of-type(5) {
+    --img: url(https://vtv1.mediacdn.vn/thumb_w/650/2021/10/2/a-1633166357191819641388.jpg);
+}
