@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <!-- Mở đầu -->
+    <head>
+        <!-- Tên của tab -->
+        <title> My website </title>
+        <link rel = "stylesheet" href = "sheraton.css">
+        <link rel = "stylesheet" href = "sheraton_responsive.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel = "stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel = "stylesheet" href = "./assets/fonts/fontawesome-free-5.12.0/css/all.min.css">
+        <script src = "project_animation.js" async></script>
+        <!-- Hỗ trợ tiếng việt -->
+        <meta charset = "utf-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <!-- Thân / content -->
+    <body>
+        <div class = "nav_bar-pc">
+            <div class = "navbar_pc-image">
+                <img src = "../portfolio_image/p10.png" style = "width: 80%; height: 60%; margin-top: 30px;">
+                <h2> PORTFOLIO </h2>
+                <h4 style = "font-family: Georgia, 'Times New Roman', Times, serif;"> Since 2022 </h4>
+            </div>
+            <div class = "navbar_pc-info">
+                <div class = "info">
+                    <i class = "fa fa-th-large fa-fw w3-margin-right"></i>
+                    <a href = "../portfolio_coding/portfolio.html"> <p> PORTFOLIO </p> </a>
+                </div>
+                <div class = "info">
+                    <i class = "fa fa-user fa-fw w3-margin-right"></i>
+                    <a href = "../portfolio_coding/portfolio.html"> <p> ABOUT </p> </a>
+                </div>
+                <div class = "info">
+                    <i class = "fa fa-envelope fa-fw w3-margin-right"></i>
+                    <a href = "../portfolio_coding/portfolio.html"> <p> CONTACT </p> </a>
+                </div>
+                <div class = "info">
+                    <button class = "mode" onclick = "myFunction(1)"> <img src = "darkness.png" style = "width: 80%; height: 80%;"> </button>
+                    <button class = "mode" onclick = "myFunction(2)"> <img src = "brightness.png" style = "width: 80%; height: 80%;"> </button>
+                </div>
+            </div>
+        </div>
+        
+        <video autoplay loop muted id = "myVideo">
+            <source src = "pexels-taryn-elliott-8549588.mp4" type = "video/mp4">
+            
+        </video>
+        
+        <div class = "content" id = "content" >
+            
+            <div class = "nav_bar-mobile">
+                <div class = "menu_btn">
+                    <label for = "nav-mobile-input" class="fa-solid fa-bars" style = "color: white; font-size: 32px; margin-left: 20px; margin-top: 15px;"></label>
+                    <input type = "checkbox" hidden name = "" class = "nav_input" id = "nav-mobile-input">
+                    <label for = "nav-mobile-input" class="nav_overlay"></label>
+                    
+                    <div class = "navbar_mobile-options">
+                        <label for = "nav-mobile-input" class = "navbar_mobile-close">
+                            <i class='fas fa-times-circle'></i>
+                        </label>
+                        <ul class = "navbar_mobile-list">
+                            <li>
+                                <a href = "" class = "navbar_mobile-link"> Home </a>
+                            </li>
+                            <li>
+                                <a href = "" class = "navbar_mobile-link"> About </a>
+                            </li>
+                            <li>
+                                <a href = "" class = "navbar_mobile-link"> News </a>
+                            </li>
+                            <li>
+                                <a href = "" class = "navbar_mobile-link"> Contact </a>
+                            </li>
+                            <li>
+                                <div class="search-box">
+                                    <input type="text" class="input-search" placeholder="Type to Search...">
+                                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+    
+                
+            </div>
+            <div class = "center">
+                <div class = "center_left"></div>
+                <div class = "center_center">
+                    <div class = "clock">
+                        <p id = "clock"></p>
+                    </div>
+                    <div id = "playlist">
+                        <audio controls autoplay style = "border: none; background-color: rgba(0,0,0,0.01);">
+                        </audio>
+                        <ul>
+                            <li class = "list"> No raining in afternoon today </li>
+                            <li class = "list"> Cannot forget you </li>
+                            <li class = "list"> Still Life </li>
+                            <li class = "list"> Love </li>
+                            <li class = "list"> Nothing impossible in our Earth </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "center_right"></div>
+            </div>
+            
+            <div class = "blank"></div>
+        </div>
+
+        <div class = "content_desc">
+
+        </div>
+        
+    </body>
+
+    <script src = "https://code.jquery.com/jquery-2.2.0.js">
+
+    </script>
+
+    <script>
+        const myTime = setInterval(myClock, 1000);
+
+        function myFunction(n) {
+            
+            if (n == 1) {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            } else {
+                document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+                document.body.style.color = "white";
+            }
+        }
+
+        function myClock () {
+            const date = new Date();
+            document.getElementById("clock").innerHTML = date.toLocaleTimeString();
+        }
+
+        function mode() {
+            var x = document.getElementsById("mode_btn");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        var files = [
+                "ChieuNayKhongCoMuaBay.mp3",
+                "ChuaQuenNguoiYeuCu.mp3",
+                "StillLife.mp3",
+                "TrotYeu.mp3",
+                "TraiDatTronKhongGiLaKhongThe.mp3"
+        ]
+
+        autoplayer();
+
+        function autoplayer() {
+            var i = 0;
+            var player = document.querySelector('#playlist audio');
+            var list = document.getElementsByClassName('list');
+
+            function next() {
+                if (i === files.length - 1) {
+                    i = 0;
+                } else {
+                    i ++;
+                }
+                player.src = files[i];
+                list[i].style.color = "black";
+                if (i > 0 && i <= 4) {
+                    list[i-1].style.color = "white";
+                } else {
+                    list[3].style.color = "white";
+                }
+                
+            }
+
+            if (player === null) {
+                throw "";
+            } else {
+                player.src = files[i];
+                list[i].style.color = 'black';
+                player.addEventListener('ended', next, false);
+            }
+        }
+
+    </script>
+</html>
