@@ -1,0 +1,26 @@
+@media (max-width: 850px) {
+
+    .center_center {
+        display: flex;
+        flex-direction: column;
+    }
+    .light_or_dark {
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+    }
+
+    #clock {
+        font-size: 24px;
+        margin-top: 70px;
+        flex: 3;
+    }
+
+    #playlist {
+        flex: 7;
+    }
+    
+    .mode_desc {
+        margin-left: 30px;
+    }
+}
